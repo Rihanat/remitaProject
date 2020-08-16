@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <link rel="stylesheet" href="build/css/intlTelInput.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Remita sign up</title>
+</head>
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top nav_background">
+            <div class="container">
+                <a class="navbar-brand" href="#"> <img src="images/remita_logo_white.png" > </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item items">
+                            <a class="nav-link" href="index.html" id="active">About</a>
+                        </li>
+                        <li class="nav-item items">
+                            <a class="nav-link" href="#">Remita Mobile</a>
+                        </li>
+                        <li class="nav-item items">
+                            <a class="nav-link" href="#">Developer</a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+          </nav>
+    </div>
+
+    <div class="container card_container">
+
+        <div class="card">
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <div class="image_div">
+                    <div id="error-id">
+
+                    </div>
+                    <img src="/images/logo_remi.svg">
+                    <h3 id="register">Register with Remita</h3>
+                    <p id="pls">Please enter your details below</p>
+                </div>
+
+                <form method="POST" enctype="multipart/for-data" onsubmit="return validate()">
+                    <!-- FIRST DIV -->
+                    <div class="row mt-4">
+                        <div class="col-md-6 col-sm-12 col-xs-12 col-lg-6">
+                            <label>Email Address<span class="label_span">*</span></label> <br>
+                            <input type="email" name="email" id="email" placeholder="Enter Email Address">
+                        </div>
+    
+                        <div class="col-md-6 col-sm-12 col-xs-12 col-lg-6">
+                            <label>Phone Number<span class="label_span">*</span></label> <br>
+                            <!-- <input name="phone" id="phone" type="tel"> -->
+                            <input id="phone" name="phone" type="tel" placeholder="Enter Phone Number">
+                        </div>
+                    </div>
+                    <!-- SECOND DIV -->
+                    <div class="row mt-4">
+                        <div class="col-md-6 col-sm-12 col-xs-12 col-lg-6">
+                            <label>First Name<span class="label_span">*</span></label> <br>
+                            <input name="firstName" id="firstName" type="text" placeholder="Enter First Name">
+                        </div>
+    
+                        <div class="col-md-6 col-sm-12 col-xs-12 col-lg-6 ">
+                            <label>Last Name<span class="label_span">*</span></label> <br>
+                            <input name="lastName" id="lastName" type="text" placeholder="Enter Last Name">
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <div class="dropdown">
+                            <label>This Registration is for<span class="label_span">*</span></label> <br>
+                            <select id="select" name="select">
+                                <option disabled>Please Select From - Self/SME/Corporate etc</option>
+                                <option>My Personal Account</option>
+                                <option>MSME - Sole Signatory</option>
+                                <option>SME/Corporate - Multi Signatory</option>
+                                <option>Government/MDA</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <div class="g-recaptcha" 
+                            data-sitekey="6LeGPr8ZAAAAALrza3pXyZgQ26t7VkAtLuEx8gXa"></div>
+                    </div>
+                    <button class="mt-3 btn">Next &nbsp; &nbsp; <i class="fa fa-angle-right"></i></button>
+                </form>
+              </blockquote>
+            </div>
+          </div>
+    </div>
+<!-- FOOTER SECTION -->
+    <footer>
+        <div class="container-fluid parent">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 col-sm-12 col-xs-12 col-lg-5">
+                        <h4 id="contact">Contact Us</h4>
+                        <div>www.systemspecs.com.ng</div>
+                        <div>Plot B22, Yesufu Abiodun Oniru Road, Oniru.</div>
+                        <div><strong>Support:</strong> +234-1-6367000, +234700-7877678</div>
+                        <div><a href="#">support@remita.net</a></div>
+                    </div>
+
+                    <div class="col-md-2 col-sm-12 col-xs-12 col-lg-2">
+                        <p><a href="#">About Us</a></p>
+                        <p><a href="#">Features</a></p>
+                        <p><a href="#">Remita Mobile</a></p>
+                    </div>
+
+                    <div class="col-md-2 col-sm-12 col-xs-12 col-lg-2">
+                        <p><a href="#">Pricing</a></p>
+                        <p><a href="#">Agents and Partners</a></p>
+                        <p><a href="#">Developers</a></p>
+                    </div>
+
+                    <div class="col-md-2 col-sm-12 col-xs-12 col-lg-2">
+                        <p><a href="#">Support and FAQs</a></p>
+                        <p><a href="#">Careers</a></p>
+                        <p><a href="#">Terms and Conditions</a></p>
+                        <p><a href="#">Privacy Policy</a></p>
+                    </div>
+                </div>
+                <hr class="mt-4">
+                <div class="d-flex justify-content-center mt-2">
+                    <p>Copyright © 2020 SystemSpecs. All Rights Reserved | Remita is a platform designed and developed by<a href="#"> SystemSpecs.</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="build/js/intlTelInput.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   
+    <script src="./index.js" type="text/javascript"></script>
+
+</body>
+</html>
