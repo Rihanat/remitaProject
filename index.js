@@ -51,6 +51,6 @@ function validate() {
 
     alert("Form submitted Successfully")
 
-    return true
+    return true;
 }
 module.exports = require("./build/js/intlTelInput");
